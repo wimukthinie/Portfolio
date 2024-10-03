@@ -94,11 +94,13 @@ a {
 /* About Section */
 .about-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: column; /* Center align */
     padding: 100px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center; /* Center text */
 }
 
 .about-text {
@@ -170,15 +172,14 @@ a {
     padding: 100px 20px;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat
-
-
 /* Contact Section */
 .contact {
-    padding: 150px 20px;
-    text-align: center;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    padding: 0 20px;
+    text-align: center; /* Center text */
 }
 
 .contact-form {
@@ -230,8 +231,4 @@ a {
 /* Additional Spacing for Contact Section */
 .contact h2 {
     margin-bottom: 40px;
-}
-
-.contact-form input, .contact-form textarea {
-    margin-bottom: 25px;
 }
